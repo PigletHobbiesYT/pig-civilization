@@ -1,1 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pig Civilization</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <header>
+        <h1>🐷 Pig Civilization</h1>
+        <p>Build your first pig village!</p>
+    </header>
+
+    <section class="resources">
+        <div>🐷 Pigs: <span id="pigs">5</span></div>
+        <div>🌲 Wood: <span id="wood">0</span></div>
+        <div>🪨 Stone: <span id="stone">0</span></div>
+        <div>🌾 Food: <span id="food">10</span></div>
+    </section>
+
+    <main>
+
+        <section class="map">
+            <h2>🏞️ Your Land</h2>
+
+            <div id="world">
+                <div class="pig">🐷</div>
+                <div class="pig">🐷</div>
+                <div class="pig">🐷</div>
+                <div class="pig">🐷</div>
+                <div class="pig">🐷</div>
+            </div>
+        </section>
+
+        <section class="controls">
+            <h2>Actions</h2>
+
+            <button id="woodButton">🌲 Gather Wood</button>
+            <button id="stoneButton">🪨 Gather Stone</button>
+            <button id="foodButton">🌾 Gather Food</button>
+
+            <hr>
+
+            <button id="houseButton">🏠 Build House</button>
+
+            <p id="message">Your pigs are ready to build a civilization!</p>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

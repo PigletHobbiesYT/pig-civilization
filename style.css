@@ -1,1 +1,142 @@
+* {
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #b7e4a8;
+    color: #263b20;
+}
+
+header {
+    text-align: center;
+    background: #6b9e5a;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+.resources {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding: 15px;
+    background: #e9f5df;
+    font-weight: bold;
+}
+
+.resources div {
+    background: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+main {
+    display: flex;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 25px auto;
+    padding: 15px;
+}
+
+.map {
+    flex: 2;
+}
+
+.controls {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#world {
+    position: relative;
+    height: 500px;
+    border: 6px solid #496b3e;
+    border-radius: 15px;
+    overflow: hidden;
+
+    background:
+        radial-gradient(circle at 20% 30%, #78b866 0 8px, transparent 9px),
+        radial-gradient(circle at 70% 60%, #78b866 0 10px, transparent 11px),
+        radial-gradient(circle at 40% 80%, #78b866 0 7px, transparent 8px),
+        #8dcc76;
+}
+
+.pig {
+    position: absolute;
+    font-size: 42px;
+}
+
+.pig:nth-child(1) {
+    left: 15%;
+    top: 20%;
+}
+
+.pig:nth-child(2) {
+    left: 45%;
+    top: 15%;
+}
+
+.pig:nth-child(3) {
+    left: 70%;
+    top: 35%;
+}
+
+.pig:nth-child(4) {
+    left: 30%;
+    top: 65%;
+}
+
+.pig:nth-child(5) {
+    left: 75%;
+    top: 75%;
+}
+
+button {
+    width: 100%;
+    padding: 13px;
+    margin: 7px 0;
+    border: none;
+    border-radius: 10px;
+    background: #6b9e5a;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #527f45;
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ddd;
+    margin: 20px 0;
+}
+
+#message {
+    background: #f0f7eb;
+    padding: 12px;
+    border-radius: 10px;
+    line-height: 1.4;
+}
+
+.house {
+    position: absolute;
+    font-size: 55px;
+}
